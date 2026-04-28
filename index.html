@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Majestic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="loader-name">Grupo Majestic<sup>®</sup></div>
+    <div class="loader-progress">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-num" id="lnum">0%</div>
+  </div>
+
+  <div class="c" id="c"></div>
+  <div class="c-ring" id="cr"></div>
+  <canvas id="pc"></canvas>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Grupo Majestic<sup>® MX</sup></a>
+    <div class="nav-r">
+      <ul class="nav-links">
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#gallery">Portafolio</a></li>
+        <li><a href="#destinations">Destinos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <a href="#contact" class="nav-btn">Consulta privada</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-l">
+      <div class="hero-eyebrow">Wedding Planners · Lujo · México</div>
+      <h1 class="hero-h">
+        <span class="line">Donde cada</span>
+        <span class="line">momento se</span>
+        <span class="line">vuelve <em>eterno.</em></span>
+      </h1>
+      <p class="hero-desc">Creamos bodas de lujo en los destinos más exclusivos de México. Más de una década
+        transformando sueños en momentos extraordinarios.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-gold">
+          Iniciar mi historia
+          <svg width="18" height="7" viewBox="0 0 18 7" fill="none">
+            <path d="M0 3.5H16M13 1l3 2.5-3 2.5" stroke="currentColor" stroke-width=".9" />
+          </svg>
+        </a>
+        <a href="#gallery" class="btn-ghost">Ver portafolio</a>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="hero-img" id="hi"></div>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-counter">
+        <div class="hero-counter-num"><span id="hc">200</span><sup>+</sup></div>
+        <div class="hero-counter-label">Bodas creadas</div>
+      </div>
+    </div>
+    <div class="hero-scroll-ind">
+      <div class="scroll-bar"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <div class="marquee-item"><span>San Miguel de Allende</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Valle de Bravo</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Los Cabos</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Ciudad de México</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Cancún & Riviera Maya</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Acapulco</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Querétaro</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Morelos</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>San Miguel de Allende</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Valle de Bravo</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Los Cabos</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Ciudad de México</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Cancún & Riviera Maya</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Acapulco</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Querétaro</span>
+        <div class="marquee-dot"></div>
+      </div>
+      <div class="marquee-item"><span>Morelos</span>
+        <div class="marquee-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-sidebar">
+      <div class="sidebar-label r">Nuestra filosofía</div>
+      <div class="sidebar-index r d1">01</div>
+      <p class="sidebar-desc r d2">Somos más que planificadores. Somos narradores de las historias de amor más
+        importantes de tu vida.</p>
+    </div>
+    <div class="about-main">
+      <p class="about-statement r">
+        No coordinamos eventos.<br>
+        Construimos los <em>recuerdos más importantes</em> de tu vida, con obsesión por cada detalle.
+      </p>
+      <div class="about-cols">
+        <div class="r d1">
+          <div class="about-col-title">Quiénes somos</div>
+          <p class="about-col-text">Un dúo de wedding planners con más de una década creando bodas de lujo. Trabajamos
+            con un número selecto de parejas al año para garantizar atención completamente personalizada.</p>
+        </div>
+        <div class="r d2">
+          <div class="about-col-title">Nuestra promesa</div>
+          <p class="about-col-text">Cada elemento — desde la arquitectura floral hasta la iluminación cinematográfica —
+            es concebido para reflejar la esencia única de cada pareja. El resultado: una experiencia que trasciende.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat r">
+      <div class="stat-n"><span id="s1">0</span><sup>+</sup></div>
+      <div class="stat-l">Bodas realizadas</div>
+    </div>
+    <div class="stat r d1">
+      <div class="stat-n"><span id="s2">0</span></div>
+      <div class="stat-l">Años de experiencia</div>
+    </div>
+    <div class="stat r d2">
+      <div class="stat-n"><span id="s3">0</span></div>
+      <div class="stat-l">Destinos en México</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-head">
+      <h2 class="section-title r">Lo que <em>hacemos</em></h2>
+      <span class="section-count r">04 servicios</span>
+    </div>
+    <div class="services-grid">
+      <div class="service-item r">
+        <div class="service-item-num">01</div>
+        <div class="service-item-img">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Coordinación">
+        </div>
+        <div class="service-item-name">Coordinación Integral</div>
+        <div class="service-item-desc">Desde la primera reunión hasta el último vals. Cada decisión, cada proveedor,
+          cada timeline.</div>
+      </div>
+      <div class="service-item r d1">
+        <div class="service-item-num">02</div>
+        <div class="service-item-img">
+          <img src="https://images.unsplash.com/photo-1520016491742-b2490e6d6232?w=600&q=80" alt="Flores">
+        </div>
+        <div class="service-item-name">Diseño Floral & Décor</div>
+        <div class="service-item-desc">Arquitecturas florales únicas que transforman cualquier espacio en un escenario
+          de película.</div>
+      </div>
+      <div class="service-item r d2">
+        <div class="service-item-num">03</div>
+        <div class="service-item-img">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80" alt="Destino">
+        </div>
+        <div class="service-item-name">Bodas Destino</div>
+        <div class="service-item-desc">Especialistas en los destinos más icónicos de México. La logística, resuelta con
+          elegancia.</div>
+      </div>
+      <div class="service-item r d3">
+        <div class="service-item-num">04</div>
+        <div class="service-item-img">
+          <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=600&q=80" alt="Producción">
+        </div>
+        <div class="service-item-name">Producción Cinematic</div>
+        <div class="service-item-desc">Iluminación, entretenimiento y producción de nivel internacional para cada
+          momento.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="gallery-intro">
+      <div>
+        <div class="sidebar-label r">Portafolio</div>
+        <h2 class="gallery-title r d1">Historias que hemos<br>tenido el honor de <em>contar</em></h2>
+      </div>
+      <p class="gallery-sub r d1">Cada boda es una obra única. Aquí, una selección de las historias de amor que hemos
+        tenido el privilegio de crear.</p>
+    </div>
+    <div class="g-grid">
+      <div class="g-item r">
+        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=900&q=85" alt="Boda Valle de Bravo">
+        <div class="g-caption"><span>Valle de Bravo · 2024</span></div>
+      </div>
+      <div class="g-item r d1">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=700&q=85" alt="Ceremonia">
+        <div class="g-caption"><span>San Miguel de Allende · 2024</span></div>
+      </div>
+      <div class="g-item r d2">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=85" alt="Flores">
+        <div class="g-caption"><span>Los Cabos · 2023</span></div>
+      </div>
+      <div class="g-item r d3">
+        <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=1000&q=85" alt="Boda íntima">
+        <div class="g-caption"><span>Cancún · 2024</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <div class="dest-header">
+      <div>
+        <div class="sidebar-label r">Destinos</div>
+        <h2 class="dest-title r d1">México como <em>escenario</em></h2>
+      </div>
+      <p class="dest-sub r d2">Cada destino tiene su propia alma. Nosotros sabemos cómo hacer que ese alma forme parte
+        de tu historia.</p>
+    </div>
+    <div class="dest-list">
+      <div class="dest-card r">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">San Miguel de Allende</div>
+          <div class="dest-card-region">Guanajuato</div>
+        </div>
+      </div>
+      <div class="dest-card r d1">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">Valle de Bravo</div>
+          <div class="dest-card-region">Estado de México</div>
+        </div>
+      </div>
+      <div class="dest-card r d2">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">Los Cabos</div>
+          <div class="dest-card-region">Baja California Sur</div>
+        </div>
+      </div>
+      <div class="dest-card r d3">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">Ciudad de México</div>
+          <div class="dest-card-region">CDMX</div>
+        </div>
+      </div>
+      <div class="dest-card r d4">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">Cancún</div>
+          <div class="dest-card-region">Quintana Roo</div>
+        </div>
+      </div>
+      <div class="dest-card r d5">
+        <div class="dest-card-bg"
+          style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80')"></div>
+        <div class="dest-card-body">
+          <div class="dest-card-name">Acapulco</div>
+          <div class="dest-card-region">Guerrero</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="process-head">
+      <div class="sidebar-label r">Proceso</div>
+      <h2 class="process-head-title r d1">Cómo <em>trabajamos</em></h2>
+    </div>
+    <div class="process-list">
+      <div class="process-row r">
+        <div class="p-num">01</div>
+        <div>
+          <div class="p-name">Consulta privada</div>
+          <div class="p-tag">Primera reunión</div>
+        </div>
+        <div class="p-desc">Una conversación íntima para comprender tu visión, personalidad y los detalles que harán
+          única tu historia. Sin presión, sin plantillas.</div>
+      </div>
+      <div class="process-row r d1">
+        <div class="p-num">02</div>
+        <div>
+          <div class="p-name">Diseño & concepto</div>
+          <div class="p-tag">Propuesta visual</div>
+        </div>
+        <div class="p-desc">Creamos una propuesta visual completamente personalizada. Paleta, flores, iluminación,
+          escenografía — todo curado para reflejar su esencia.</div>
+      </div>
+      <div class="process-row r d2">
+        <div class="p-num">03</div>
+        <div>
+          <div class="p-name">Coordinación total</div>
+          <div class="p-tag">Gestión completa</div>
+        </div>
+        <div class="p-desc">Gestionamos cada proveedor, timeline y detalle logístico. Ustedes disfrutan el proceso;
+          nosotros nos encargamos de que todo funcione perfectamente.</div>
+      </div>
+      <div class="process-row r d3">
+        <div class="p-num">04</div>
+        <div>
+          <div class="p-name">El gran día</div>
+          <div class="p-tag">Presencia total</div>
+        </div>
+        <div class="p-desc">Nuestro equipo completo presente desde las primeras horas hasta el último vals. Su única
+          tarea: vivir cada momento plenamente.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="test-inner">
+      <div class="test-label r">Lo que dicen nuestras parejas</div>
+      <div class="test-quote r d1" id="tq">Grupo Majestic no solo organizó nuestra boda, creó la experiencia más mágica
+        de nuestras vidas. Cada detalle superó lo que habíamos imaginado.</div>
+      <div class="test-author r d2" id="ta">Sofía & Diego · Valle de Bravo, 2024</div>
+      <div class="test-nav r d3">
+        <div class="test-btn a" onclick="goTest(0)"></div>
+        <div class="test-btn" onclick="goTest(1)"></div>
+        <div class="test-btn" onclick="goTest(2)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <div class="cta-tag r">Consulta privada · Cupo limitado</div>
+      <h2 class="cta-title r d1">Tu historia merece<br>un escenario <em>único.</em></h2>
+      <p class="cta-sub r d2">Aceptamos un número selecto de bodas al año</p>
+      <div class="r d3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="#contact" class="btn-gold">Reservar consulta</a>
+        <a href="#gallery" class="btn-ghost" style="color:var(--muted);align-self:center">Ver portafolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div>
+      <div class="sidebar-label r">Contacto</div>
+      <h2 class="contact-left-title r d1">Cuéntanos su <em>historia</em></h2>
+      <p class="contact-left-desc r d2">Cada gran boda comienza con una conversación. Escríbenos y en menos de 24 horas
+        agendamos tu consulta privada.</p>
+      <div class="contact-detail r d2">
+        <div class="contact-icon">✉</div>
+        <span>hola@grupomajestic.mx</span>
+      </div>
+      <div class="contact-detail r d3">
+        <div class="contact-icon">☎</div>
+        <span>+52 (55) 1234-5678</span>
+      </div>
+      <div class="contact-detail r d4">
+        <div class="contact-icon">◈</div>
+        <span>@grupomajestic</span>
+      </div>
+    </div>
+    <div>
+      <div class="form-row">
+        <div class="form-field r">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre completo">
+        </div>
+        <div class="form-field r d1">
+          <label>Correo</label>
+          <input type="email" placeholder="tu@correo.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field r d1">
+          <label>Fecha aproximada</label>
+          <input type="text" placeholder="Mes y año">
+        </div>
+        <div class="form-field r d2">
+          <label>Destino</label>
+          <select>
+            <option value="">Selecciona</option>
+            <option>San Miguel de Allende</option>
+            <option>Valle de Bravo</option>
+            <option>Los Cabos</option>
+            <option>Ciudad de México</option>
+            <option>Cancún / Riviera Maya</option>
+            <option>Acapulco</option>
+            <option>Otro destino</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field r d2">
+        <label>Su historia</label>
+        <textarea placeholder="¿Cómo se conocieron? ¿Qué visión tienen para su boda?"></textarea>
+      </div>
+      <button class="form-submit r d3" id="fsub">Enviar mensaje →</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="f-brand-name">Grupo <span>Majestic</span><sup
+          style="font-size:9px;color:var(--gold);letter-spacing:.15em">®</sup></div>
+      <p class="f-tagline">Wedding planners de lujo. Más de 200 historias de amor creadas con pasión en los destinos más
+        exclusivos de México.</p>
+      <div class="f-social">
+        <a href="#">in</a>
+        <a href="#">ig</a>
+        <a href="#">pi</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h5>Servicios</h5>
+      <ul>
+        <li><a href="servicios/coordinacion.html">Coordinación Integral</a></li>
+        <li><a href="servicios/diseno-floral.html">Diseño Floral</a></li>
+        <li><a href="servicios/bodas-destino.html">Bodas Destino</a></li>
+        <li><a href="servicios/produccion.html">Producción</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Destinos</h5>
+      <ul>
+        <li><a href="destinos/san-miguel.html">San Miguel de Allende</a></li>
+        <li><a href="destinos/valle-de-bravo.html">Valle de Bravo</a></li>
+        <li><a href="destinos/los-cabos.html">Los Cabos</a></li>
+        <li><a href="destinos/cdmx.html">CDMX</a></li>
+        <li><a href="destinos/cancun.html">Cancún</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Estudio</h5>
+      <ul>
+        <li><a href="estudio/historia.html">Nuestra Historia</a></li>
+        <li><a href="estudio/portafolio.html">Portafolio</a></li>
+        <li><a href="estudio/testimonios.html">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="f-bottom">
+    <p>© 2026 Grupo Majestic. Todos los derechos reservados.</p>
+    <p>Ciudad de México, México</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

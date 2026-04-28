@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancún & Riviera Maya - Grupo Majestic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-name">Grupo Majestic<sup>®</sup></div>
+    <div class="loader-progress">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-num" id="lnum">0%</div>
+  </div>
+
+  <div class="c" id="c"></div>
+  <div class="c-ring" id="cr"></div>
+  <canvas id="pc"></canvas>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="../" class="nav-logo">Grupo Majestic<sup>® MX</sup></a>
+    <div class="nav-r">
+      <ul class="nav-links">
+        <li><a href="../#services">Servicios</a></li>
+        <li><a href="../#gallery">Portafolio</a></li>
+        <li><a href="../#destinations">Destinos</a></li>
+        <li><a href="../#contact">Contacto</a></li>
+      </ul>
+      <a href="../#contact" class="nav-btn">Consulta privada</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-l">
+      <div class="hero-eyebrow">Destinos · Quintana Roo</div>
+      <h1 class="hero-h">
+        <span class="line">Cancún y</span>
+        <span class="line">Riviera Maya,</span>
+        <span class="line">el paraíso <em>caribeño.</em></span>
+      </h1>
+      <p class="hero-desc">Playas de turquesa, resorts all-inclusive de lujo y cenotes mágicos. El destino
+        tropical perfecto para bodas de ensueño en la Riviera Maya.</p>
+      <div class="hero-actions">
+        <a href="../#contact" class="btn-gold">
+          Agendar consulta
+          <svg width="18" height="7" viewBox="0 0 18 7" fill="none">
+            <path d="M0 3.5H16M13 1l3 2.5-3 2.5" stroke="currentColor" stroke-width=".9" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="hero-img"
+        style="background: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=85') center/cover no-repeat;"
+        id="hi"></div>
+      <div class="hero-img-overlay"></div>
+    </div>
+  </section>
+
+  <!-- DESTINO DETAIL -->
+  <section id="about">
+    <div class="about-sidebar">
+      <div class="sidebar-label">Cancún</div>
+      <div class="sidebar-index">04</div>
+      <p class="sidebar-desc">Playas caribeñas, resorts de lujo y atmósfera tropical de película.</p>
+    </div>
+    <div class="about-main">
+      <h2 class="about-statement">
+        Bodas tropicales de <em>lujo absoluto.</em>
+      </h2>
+      <div class="about-cols">
+        <div>
+          <h3 class="about-col-title">POR QUÉ CANCÚN</h3>
+          <p class="about-col-text">
+            • Playas de aguas turquesas ideales<br>
+            • Resorts all-inclusive de talla mundial<br>
+            • Cenotes únicos para ceremonias<br>
+            • Clima tropical perfecto<br>
+            • Infraestructura hotelera de 5 estrellas<br>
+            • Próximo a Tulum y Playa del Carmen
+          </p>
+        </div>
+        <div>
+          <h3 class="about-col-title">VENUES DESTACADOS</h3>
+          <p class="about-col-text">
+            • Grand Palladium<br>
+            • Moon Palace<br>
+            • Iberostar Selection<br>
+            • Xcaret Events<br>
+            • Private beach clubs<br>
+            • Cenote venues exclusivos
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <div class="cta-tag r">Cancún & Riviera Maya · Destino Tropical</div>
+      <h2 class="cta-title r d1">Tu boda en el<br><em>paraíso caribeño.</em></h2>
+      <p class="cta-sub r d2">Expertos en bodas all-inclusive de lujo</p>
+      <div class="r d3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="../#contact" class="btn-gold">Reservar consulta</a>
+        <a href="../#gallery" class="btn-ghost" style="color:var(--muted);align-self:center">Ver bodas aquí</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div>
+      <div class="sidebar-label r">Contacto</div>
+      <h2 class="contact-left-title r d1">Planea tu boda en<br><em>Cancún</em></h2>
+      <p class="contact-left-desc r d2">Cada gran boda comienza con una conversación. Escríbenos y en menos de 24 horas
+        agendamos tu consulta privada.</p>
+      <div class="contact-detail r d2">
+        <div class="contact-icon">✉</div>
+        <span>hola@grupomajestic.mx</span>
+      </div>
+      <div class="contact-detail r d3">
+        <div class="contact-icon">☎</div>
+        <span>+52 (55) 1234-5678</span>
+      </div>
+      <div class="contact-detail r d4">
+        <div class="contact-icon">◈</div>
+        <span>@grupomajestic</span>
+      </div>
+    </div>
+    <div>
+      <div class="form-row">
+        <div class="form-field r">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre completo">
+        </div>
+        <div class="form-field r d1">
+          <label>Correo</label>
+          <input type="email" placeholder="tu@correo.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field r d1">
+          <label>Fecha aproximada</label>
+          <input type="text" placeholder="Mes y año">
+        </div>
+        <div class="form-field r d2">
+          <label>Destino</label>
+          <select>
+            <option value="">Selecciona</option>
+            <option>San Miguel de Allende</option>
+            <option>Valle de Bravo</option>
+            <option>Los Cabos</option>
+            <option>Ciudad de México</option>
+            <option>Cancún / Riviera Maya</option>
+            <option>Acapulco</option>
+            <option>Otro destino</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field r d2">
+        <label>Su historia</label>
+        <textarea placeholder="¿Cómo se conocieron? ¿Qué visión tienen para su boda?"></textarea>
+      </div>
+      <button class="form-submit r d3" id="fsub">Enviar mensaje →</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="f-brand-name">Grupo <span>Majestic</span><sup
+          style="font-size:9px;color:var(--gold);letter-spacing:.15em">®</sup></div>
+      <p class="f-tagline">Wedding planners de lujo. Más de 200 historias de amor creadas con pasión en los destinos más
+        exclusivos de México.</p>
+      <div class="f-social">
+        <a href="#">in</a>
+        <a href="#">ig</a>
+        <a href="#">pi</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h5>Servicios</h5>
+      <ul>
+        <li><a href="../servicios/coordinacion.html">Coordinación Integral</a></li>
+        <li><a href="../servicios/diseno-floral.html">Diseño Floral</a></li>
+        <li><a href="../servicios/bodas-destino.html">Bodas Destino</a></li>
+        <li><a href="../servicios/produccion.html">Producción</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Destinos</h5>
+      <ul>
+        <li><a href="san-miguel.html">San Miguel de Allende</a></li>
+        <li><a href="valle-de-bravo.html">Valle de Bravo</a></li>
+        <li><a href="los-cabos.html">Los Cabos</a></li>
+        <li><a href="cdmx.html">CDMX</a></li>
+        <li><a href="cancun.html">Cancún</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Estudio</h5>
+      <ul>
+        <li><a href="../estudio/historia.html">Nuestra Historia</a></li>
+        <li><a href="../estudio/portafolio.html">Portafolio</a></li>
+        <li><a href="../estudio/testimonios.html">Testimonios</a></li>
+        <li><a href="../#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="f-bottom">
+    <p>© 2026 Grupo Majestic. Todos los derechos reservados.</p>
+    <p>Ciudad de México, México</p>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
